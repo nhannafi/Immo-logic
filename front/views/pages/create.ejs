@@ -1,0 +1,32 @@
+<%- include('../partials/head') %> <%- include('../partials/navigation') %>
+
+<h1>Ajouter une Annonce</h1>
+
+<form>
+  <div>
+    <label for="titre">Titre</label>
+    <input type="text" name="titre" id="titre"  />
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" />
+  </div>
+  <div>
+    <label for="adresse">Adresse</label>
+    <input type="text" name="adresse" id="adresse" />
+  </div>
+  <div>
+    <label for="code_postal">Code postal</label>
+    <input type="text" name="code_postal" id="code_postal"  />
+  </div>
+  <div>
+    <label for="ville">Ville</label>
+    <input type="text" name="ville" id="ville"  />
+  </div>
+  <div>
+    <label for="prix">Prix</label>
+    <input type="text" name="prix" id="prix"  />
+  </div>
+
+  <button type="submit" onclick="createAnnonce()">Ajouter</button>
+</form>

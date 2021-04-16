@@ -1,0 +1,39 @@
+<%- include('../partials/head') %> <%- include('../partials/navigation') %>
+
+<h1>Mettre à jour l'annonce numéro : <%= annonce._id %></h1>
+
+<form>
+  <div>
+    <label for="brand">Titre</label>
+    <input type="text" name="titre" id="titre" value="<%= annonce.titre %>" />
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" value="<%= annonce.description %>" />
+  </div>
+  <div>
+    <label for="adresse">Adresse</label>
+    <input type="text" name="adresse" id="adresse" value="<%= annonce.adresse %>" />
+  </div>
+  <div>
+    <label for="code_postal">Code postal</label>
+    <input type="text" name="code_postal" id="code_postal" value="<%= annonce.code_postal %>" />
+  </div>
+  <div>
+    <label for="ville">Ville</label>
+    <input type="text" name="ville" id="ville" value="<%= annonce.ville %>" />
+  </div>
+  <div>
+    <label for="prix">Prix</label>
+    <input
+      type="text"
+      name="prix"
+      id="prix"
+      value="<%= annonce.prix %>"
+    />
+  </div>
+
+  <button type="submit" onclick="updateAnnonce('<%= annonce._id %>')">
+    Mettre à jour
+  </button>
+</form>
